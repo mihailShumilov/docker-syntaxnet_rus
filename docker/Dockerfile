@@ -87,6 +87,7 @@ RUN unzip /root/models/syntaxnet/syntaxnet/models/Russian-SynTagRus.zip -d /root
 # Misk
 
 COPY demo_rus.sh /root/models/syntaxnet/syntaxnet/
+COPY server /usr/bin/
 
 # Standalone server
 
