@@ -1,5 +1,7 @@
 FROM ubuntu:15.10
 
+RUN sed -e 's/archive.ubuntu.com/old-releases.ubuntu.com/g' -i /etc/apt/sources.list
+RUN sed -e 's/security.ubuntu.com/old-releases.ubuntu.com/g' -i /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
         build-essential \
